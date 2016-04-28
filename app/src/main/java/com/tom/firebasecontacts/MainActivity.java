@@ -23,7 +23,7 @@ public class MainActivity extends AppCompatActivity {
                         android.R.id.text1);
         list.setAdapter(adapter);
         Firebase.setAndroidContext(this);
-        String url = "https://contacts-example.ﬁrebaseio.com/contacts";
+        String url = "https://contacts-example.firebaseio.com/contacts";
         new Firebase(url).addChildEventListener(new ChildEventListener() {
             @Override
             public void onChildAdded(DataSnapshot dataSnapshot, String s) {
